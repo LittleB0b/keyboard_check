@@ -151,15 +151,15 @@
     const handleKeyUp = (e) => {
         console.log(
             '\n:::::::::::::::::::::handleKeyUp:::::::::::::::::::::::',
-            '\n:: e.code ::',
-            e.code,
             '\n:: e.key ::',
             e.key,
+            '\n:: e.which ::',
+            e.which,
             '\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::'
         );
 
-        if (e.code === 'Escape') {
-            setMyThing(true);
+        if(e.which === 9){
+            console.log("9 :)");
         }
     };
 
